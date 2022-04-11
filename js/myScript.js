@@ -46,7 +46,7 @@ init = function(el) {
 
 			this.circlePath.fillColor = color;
 			this.circlePath.fullySelected = false;
-
+            
 			// Mausdistanz
 			this.threshold = radius * 1.4;
 			this.center = center;
@@ -131,10 +131,13 @@ init = function(el) {
 	};
 
 	var radius = Math.min( view.size.width, view.size.height) / 2 * 0.7;
-	var bacterium = new Bacterium( view.bounds.center, radius, "#FFF6EB" );
+	var bacterium = new Bacterium( view.bounds.center, radius, "red" );
 
 	view.onFrame = function(event) {
 		bacterium.animate(event);
+        bacterium.circlePath.fillColor.hue +=0.5;
+        
+        
 	};
 
 	/*$.support.touch = 'ontouchstart' in window;
@@ -172,7 +175,7 @@ init = function(el) {
 
 		bacterium.clear();
 		bacterium = null;
-		bacterium = new Bacterium( view.bounds.center, radius, "black");
+		bacterium = new Bacterium( view.bounds.center, radius, "red");
 	}
 
 	view.onResize = function(event) {
