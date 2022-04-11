@@ -1,0 +1,40 @@
+body{
+
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#card-front{
+
+    
+
+    width: 667px;
+    height: 406px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.42);
+    box-sizing: border-box;
+    backdrop-filter: blur(126px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 41px;
+}
+
+
+canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 80% !important;
+}
