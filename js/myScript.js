@@ -131,7 +131,12 @@ init = function(el) {
 	};
 
 	var radius = Math.min( view.size.width, view.size.height) / 2 * 0.7;
-	var bacterium = new Bacterium( view.bounds.center, radius, "red" );
+	var bacterium = new Bacterium( view.bounds.center, radius, "#FFF6EB" );
+
+
+
+	//frame by frame settings 
+
 
 	view.onFrame = function(event) {
 		bacterium.animate(event);
@@ -175,7 +180,7 @@ init = function(el) {
 
 		bacterium.clear();
 		bacterium = null;
-		bacterium = new Bacterium( view.bounds.center, radius, "red");
+		bacterium = new Bacterium( view.bounds.center, radius, "#FFF6EB");
 	}
 
 	view.onResize = function(event) {
