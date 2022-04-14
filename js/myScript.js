@@ -140,8 +140,8 @@ init = function(el) {
 
 	view.onFrame = function(event) {
 		bacterium.animate(event);
-        //bacterium.circlePath.fillColor.hue +=0.5;
-        bacterium.opacity = 0;
+        //bacterium.circlePath.fillColor.hue +=0.1;
+        
         
 	};
 
@@ -219,3 +219,12 @@ var waitForFinalEvent = (function () {
 })();*/
 
 
+
+
+$(document).ready(function(){
+    $("#btn").click(function(){
+		$(".front").fadeOut();
+		$(".back").fadeIn();
+      
+    });
+  });

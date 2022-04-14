@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Load the Paper.js library -->
     <script type="text/javascript" src="node_modules/paper/dist/paper-full.min.js"></script>
     <!-- Define inlined PaperScript associate it with myCanvas -->
@@ -33,11 +34,12 @@
 
     <canvas id="blob" resize></canvas>
 
-    <div class="card front" style="display: none;">
+    <div class="card front">
 
 
         <a href="">
             <img src="/gfx/logo.svg" width="200px" alt="">
+
         </a>
 
 
@@ -45,20 +47,33 @@
     </div>
 
 
-    <div class="card back" >
+    <div class="card back" style="display: none;" >
 
-        <div><img src="/img/me.png" alt="">
-        </div>
+        <div class="wrapper">
 
-        <div>
-            <h1>Márton Juhász</h1>
-            <h3>media designer</h3>
-            <p>06 70 612 3472</p>
-            <p>info@marton-design.com</p>
-            <p>marton-design.com</p>
+            <div><img src="/img/me.png" alt="">
+            </div>
+            
+            <div id="info">
+                <h1>Márton <span>Juhász</span></h1> 
+                <h3>media designer</h3>
+                <p>06 70 612 3472</p>
+                <p>info@marton-design.com</p>
+                <p>marton-design.com</p>
+            </div>
+
         </div>
 
         
+
+        <div class="wrapper socials">
+            <img class="icon" src="/gfx/github.svg" alt="">
+            <img class="icon" src="/gfx/behance.svg" alt="">
+            <img class="icon" src="/gfx/linkedin.svg" alt="">
+
+
+
+        </div>
 
 
     </div>
