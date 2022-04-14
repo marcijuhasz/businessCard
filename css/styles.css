@@ -17,8 +17,8 @@ body{
 
 canvas {
 	position: fixed;
-	top: 17px;
-    left: 97px;
+	top: 0;
+    left: 0;
 	width: 100% !important;
 	height: 100% !important;
 }
