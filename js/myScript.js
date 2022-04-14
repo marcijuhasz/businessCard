@@ -3,6 +3,9 @@
 var init;
 
 
+
+
+
 init = function(el) {
 
 	var blob = new paper.PaperScope();
@@ -131,7 +134,7 @@ init = function(el) {
 	};
 
 	var radius = Math.min( view.size.width, view.size.height) / 2 * 0.7;
-	var bacterium = new Bacterium( view.bounds.center, radius, "#137298" );
+	var bacterium = new Bacterium( view.bounds.center, radius, "#FFF6EB" );
 
 	
 
@@ -140,8 +143,9 @@ init = function(el) {
 
 	view.onFrame = function(event) {
 		bacterium.animate(event);
-        //bacterium.circlePath.fillColor.hue +=0.1;
         
+        
+		
         
 	};
 
@@ -180,7 +184,7 @@ init = function(el) {
 
 		bacterium.clear();
 		bacterium = null;
-		bacterium = new Bacterium( view.bounds.center, radius, "#137298");
+		bacterium = new Bacterium( view.bounds.center, radius, "#FFF6EB");
 	}
 
 	view.onResize = function(event) {
@@ -222,9 +226,9 @@ var waitForFinalEvent = (function () {
 
 
 $(document).ready(function(){
-    $("#btn").click(function(){
+    $("#btn").hover(function(){
 		$(".front").fadeOut();
 		$(".back").fadeIn();
-      
+		
     });
   });
