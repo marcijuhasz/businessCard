@@ -17,8 +17,8 @@ body{
 
 canvas {
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 17px;
+    left: 97px;
 	width: 100% !important;
 	height: 100% !important;
 }
@@ -91,12 +91,6 @@ p{
 }
 
 
-
-.front{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 .wrapper{

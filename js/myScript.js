@@ -134,7 +134,7 @@ init = function(el) {
 	};
 
 	var radius = Math.min( view.size.width, view.size.height) / 2 * 0.7;
-	var bacterium = new Bacterium( view.bounds.center, radius, "#FFF6EB" );
+	var bacterium = new Bacterium( view.bounds.center, radius, "#137298" );
 
 	
 
@@ -146,7 +146,7 @@ init = function(el) {
         
         
 		
-        
+		
 	};
 
 	/*$.support.touch = 'ontouchstart' in window;
@@ -184,7 +184,7 @@ init = function(el) {
 
 		bacterium.clear();
 		bacterium = null;
-		bacterium = new Bacterium( view.bounds.center, radius, "#FFF6EB");
+		bacterium = new Bacterium( view.bounds.center, radius, "#137298");
 	}
 
 	view.onResize = function(event) {
@@ -224,11 +224,3 @@ var waitForFinalEvent = (function () {
 
 
 
-
-$(document).ready(function(){
-    $("#btn").hover(function(){
-		$(".front").fadeOut();
-		$(".back").fadeIn();
-		
-    });
-  });
